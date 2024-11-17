@@ -1,0 +1,43 @@
+<div class="login-container">
+    <div class="login-form">
+      <h2>Iniciar Sesión</h2>
+      <form (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input matInput placeholder="Usuario" [(ngModel)]="username" name="username" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input matInput placeholder="Contraseña" type="password" [(ngModel)]="password" name="password" required />
+        </mat-form-field>
+  
+        <div class="captcha">
+          <!-- <img src="captcha-placeholder.png" alt="Captcha" /> -->
+          <div class="h-captcha" data-sitekey="ES_eeabfc88e4644e2699eaf1cca2078a84"></div>
+           <!--<button mat-raised-button type="button">Refrescar</button>-->
+          <!-- <input matInput placeholder="Código" [(ngModel)]="captcha" name="captcha" required /> -->
+        </div>
+  
+        <a href="#">¿Olvidó su Contraseña?</a>
+        
+        <button mat-flat-button color="primary" type="submit">Iniciar Sesión</button>
+      </form>
+  
+      <div class="support-info">
+        <p>SOPORTE TÉCNICO</p>
+        <p>(01) 615-5800 anexo 7777</p>
+      </div>
+  
+      <a href="#">POLÍTICA DE PRIVACIDAD</a>
+      <p>&copy; 2024 Proyecto de Investigación 01 Lima, Perú</p>
+    </div>
+  
+    <div class="info-panel">
+      <img src="assets\images\peru-minedu-logo.png" alt="Logo Ministerio de Educación" class="minedu-logo" style="width: 100%; max-width: 350px; height: auto; object-fit: contain;" />
+      <h2>Sistema de Registro de Títulos Públicos y Privados</h2>
+      <p>Información registrada por las Direcciones Regionales de Educación / Gerencias Regionales de Educación</p>
+      <img src="assets/images/certificate-preview.png" alt="Certificado en tablet" class="certificate-preview" style="width: 100%; max-width: 600px; height: auto; object-fit: contain;" />
+    </div>
+  </div>
+  
